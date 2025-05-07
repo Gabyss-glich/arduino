@@ -13,19 +13,16 @@
 #define DURATION_MS 500
 #define PAUSE_MS 500
 
- void setup() {
- pinMode(buzzer_pin, OUTPUT);
+void setup() {
+  pinMode(buzzer_pin, OUTPUT);// ppinMode(buzzer_pin, OUTPUT);
 }
 
+void loop() {
+  PLAY_TONE(C, DURATION_MS);
+  PLAY_TONE(C, DURATION_MS); 
+  PLAY_TONE(D, DURATION_MS);
+  PLAY_TONE(D, DURATION_MS);
+  PLAY_TONE(F, DURATION_MS);
+  
 
-
- void loop() {
- 
- PLAY_TONE(F, DURATION_MS);
- PLAY_TONE(D, DURATION_MS);
- PLAY_TONE(A, DURATION_MS);
- PLAY_TONE(D, DURATION_MS);
- PLAY_TONE(F, DURATION_MS);
- delay(DURATION_MS);
-
-
+}
